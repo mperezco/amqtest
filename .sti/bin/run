@@ -1,0 +1,5 @@
+#!/bin/sh
+
+$AMQ_HOME/bin/inditex-script.sh
+
+exec $AMQ_HOME/bin/launch.sh
