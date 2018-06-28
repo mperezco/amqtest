@@ -8,7 +8,7 @@ fi
 # Inditex: Avoid configure activemq.xml. It is in ConfigMap
 # source $AMQ_HOME/bin/configure.sh
 #source /opt/partition/partitionPV.sh
-source /opt/amq/partitionPV.sh
+source /opt/amq/bin/partitionPV.sh
 source /usr/local/dynamic-resources/dynamic_resources.sh
 
 ACTIVEMQ_OPTS="$(adjust_java_options ${ACTIVEMQ_OPTS})"
