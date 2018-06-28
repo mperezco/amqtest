@@ -30,10 +30,10 @@ if [ -d ${SRCBIN} ]; then
   cp -v ${SRCBIN}/*.sh $AMQ_HOME/bin/
 fi
 
-if [ -d ${SRCPARITION} ]; then
-  echo "Copying shells from project to..."
-  chmod 755 ${SRCPARITION}/*.sh
-  sudo cp -v ${SRCPARITION}/*.sh /opt/partition/
-fi
+#if [ -d ${SRCPARITION} ]; then
+#  echo "Copying shells from project to..."
+#  chmod 755 ${SRCPARITION}/*.sh
+# cp -v ${SRCPARITION}/*.sh /opt/partition/
+#fi
 
 exit 0
