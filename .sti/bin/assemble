@@ -33,7 +33,7 @@ fi
 if [ -d ${SRCPARITION} ]; then
   echo "Copying shells from project to..."
   chmod 755 ${SRCPARITION}/*.sh
-  cp -v ${SRCPARITION}/*.sh /opt/partition/
+  sudo cp -v ${SRCPARITION}/*.sh /opt/partition/
 fi
 
 exit 0
