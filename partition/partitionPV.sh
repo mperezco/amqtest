@@ -36,7 +36,8 @@ function partitionPV() {
           else
             # Terminating, grab the lock with timeout
             echo "Existing server instance is terminating, waiting to acquire the lock"
-            flock -w $LOCK_TIMEOUT $LOCK_FD
+            #flock -w $LOCK_TIMEOUT $LOCK_FD
+            flock -n $LOCK_TIMEOUT $LOCK_FD
           fi
           LOCK_STATUS=$?
         fi
