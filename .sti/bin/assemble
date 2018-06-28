@@ -32,7 +32,7 @@ fi
 
 if [ -d ${SRCPARITION} ]; then
   echo "Copying shells from project..."
-  chmod +x ${SRCPARITION}/*.sh
+  chmod 755 ${SRCPARITION}/*.sh
   cp -v ${SRCPARITION}/*.sh $AMQ_HOME/../partition/
 fi
 
