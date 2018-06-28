@@ -8,6 +8,7 @@ fi
 SRCCONF=/tmp/src/configuration
 SRCLIB=/tmp/src/lib
 SRCBIN=/tmp/src/bin
+SRCPARITION=/tmp/src/partition
 
 #Now config is in ConfigMAp
 #if [ -d ${SRCCONF} ]; then
@@ -27,6 +28,12 @@ if [ -d ${SRCBIN} ]; then
   echo "Copying shells from project..."
   chmod +x ${SRCBIN}/*.sh
   cp -v ${SRCBIN}/*.sh $AMQ_HOME/bin/
+fi
+
+if [ -d ${SRCPARITION} ]; then
+  echo "Copying shells from project..."
+  chmod +x ${SRCPARITION}/*.sh
+  cp -v ${SRCPARITION}/*.sh $AMQ_HOME/partition/
 fi
 
 exit 0
